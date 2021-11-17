@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!--Navigation Bar-->
+    <div class="navbar flex between">
+        <h1>DojoWeather</h1>
+        <div class = "navlinks flex between">
+            <p onclick="alert('Loading weather report...')">Burbank</p>
+            <p onclick="alert('Loading weather report...')">Chicago</p>
+            <p onclick="alert('Loading weather report...')">Dallas</p>
+        </div>
+    </div>
+        <!--Current City Row-->
+    <div class="current-city flex between">
+        <h2>San Jose</h2>
+        <div class="tempbox flex">
+            <p>show temp in</p>
+            <select name="units" id="units">
+                <option value="fahrenheit">°F</option>
+                <option value="centigrade">°C</option>
+            </select>
+        </div>
+    </div>
+            <!--main container-->
+    <div class="main flex between">
+                    <!--weather panels-->
+        <div class="weatherpanel">
+            <h3>Today</h3>
+            <div><img src="assets/some_rain.png" alt="some_rain"></div>
+            <p>some rain</p>
+            <div class="flex between"><h3 class="high">24°</h3> <h3 class="low">18°</h3></div>
+        </div>
+        <div class="weatherpanel">
+            <h3>Tomorrow</h3>
+            <div><img src="assets/some_sun.png" alt="some_sun"></div>
+            <p>some sun</p>
+            <div class="flex between"><h3 class="high">27°</h3> <h3 class="low">19°</h3></div>
+        </div>
+        <div class="weatherpanel">
+            <h3>Friday</h3>
+            <div><img src="assets/some_clouds.png" alt="some_clouds"></div>
+            <p>some rain</p>
+            <div class="flex between"><h3 class="high">21°</h3> <h3 class="low">16°</h3></div>
+        </div>
+        <div class="weatherpanel">
+            <h3>Saturday</h3>
+            <div><img src="assets/some_sun.png" alt="some_sun"></div>
+            <p>some sun</p>
+            <div class="flex between"><h3 class="high">26°</h3> <h3 class="low">21°</h3></div>
+        </div>
+    </div>
+                  <!--cookie warning panel-->
+    <div class="cookiewarning flex around">
+        <div><img src="assets/cookie.png" alt="cookie-icon"></div>
+        <div><h4>Stop! Cookie time</h4><p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features, and to analyze our traffic. <a href="#">Read more...</a></p></div>
+        <button class="accept" onclick="accepted()">Accept</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
